@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+     <!-- styles -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="assets/css/docs.css" rel="stylesheet">
+  <link href="assets/css/prettyPhoto.css" rel="stylesheet">
+  <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+  <link href="assets/css/camera.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300|Open+Sans:400,300,300italic,400italic" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/color/success.css" rel="stylesheet">
+
+  <!-- fav and touch icons -->
+  <link rel="shortcut icon" href="assets/ico/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+  
+
+    <title>Library</title>
+
+    <style>
+    #myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px; /* Increase font-size */
+}
+
+#myTable th, #myTable td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+}
+
+#myTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd; 
+}
+
+#myTable tr.header, #myTable tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+}
+    </style>
+  </head>
+  <body>
+  
+
+      
+          <div class="jumbotron masthead">
+      
+            <div class="container">
+              <div class="row">
+                <div class="span12">
+                  <div class="camera_wrap camera_black_skin" id="camera_wrap_2">
+                    <div data-thumb="assets/img/slides/camera/img1.jpg" data-src="assets/img/faq.jpg">
+                      <div class="camera_caption fadeFromBottom">
+                        <h2>Frequently Asked Questions</h2>
+                        <div class="hidden-phone">
+                          <p>
+                            Mei ad recteque rationibus, ex quaeque civibus eloquentiam vim. Solet cetero id nam. Ne eos nonumy voluptua, vis nobis euismod qualisque te, no nam debet oporteat.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-thumb="assets/img/slides/camera/img2.jpg" data-src="assets/img/workflow-slide.jpg">
+                      <div class="camera_caption fadeFromBottom">
+                        <h2>Easy Search Breakdown</h2>
+                        <div class="hidden-phone">
+                          <p>
+                            Nam omnium salutandi ad, accusam indoctum ne mel, posse expetendis mea at. Luptatum antiopam pro ne. Eum at autem antiopam sadipscing, an his omnis splendide perfecto.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-thumb="assets/img/slides/camera/img3.jpg" data-src="assets/img/contact-us.jpg">
+                      <div class="camera_caption fadeFromBottom">
+                        <h2>Contact Information</h2>
+                        <div class="hidden-phone">
+                          <p>
+                            Lorem ipsum dolor sit amet, dicam singulis in ius, eu timeam aperiam pri. His suas solum legimus eu, sea an duis habemus urbanitas. No sapientem consetetur sit an.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-thumb="assets/img/slides/camera/img4.jpg" data-src="assets/img/TechnologyGearGuy.jpg">
+                      <div class="camera_caption fadeFromBottom">
+                        <h2>Features to Come</h2>
+                        <div class="hidden-phone">
+                          <p>
+                            Sit et laudem aperiri argumentum. Vim laboramus instructior eu, minim aliquid accusata ut est, sea ut ridens causae quaerendum. Ea vide posidonium usu qui ad pertinax.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #camera_wrap_1 -->
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+   
+<div class="container">
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">Topic</th>
+    <th style="width:40%;">Resource</th>
+  </tr>
+  <tr>
+      <td>BBMC Overlays</td>
+      <td><!-- Button trigger modal -->
+          <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal">
+            Open PDF
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div></td>
+    </tr>
+    <tr>
+          <td>Mortgagee Clause</td>
+          <td><!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal">
+                Open Description
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div></td>
+        </tr>
+    <tr>
+          <td>RUN AUS</td>
+          <td><!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal">
+                Watch Video
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div></td>
+        </tr>
+    <tr>
+          <td>Escrow Tax Info</td>
+          <td><!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal">
+                Open PDF
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div></td>
+        </tr>
+  <tr>
+    <td>BBMC Overlays</td>
+    <td><!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal">
+          Open PDF
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div></td>
+  </tr>
+  <tr>
+        <td>Mortgagee Clause</td>
+        <td><!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal">
+              Open Description
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div></td>
+      </tr>
+  <tr>
+        <td>RUN AUS</td>
+        <td><!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal">
+              Watch Video
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div></td>
+      </tr>
+  <tr>
+        <td>Escrow Tax Info</td>
+        <td><!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal">
+              Open PDF
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div></td>
+      </tr>
+</table>
+</div>
+
+<br>
+<br>
+
+<!-- Footer
+ ================================================== -->
+ <footer class="footer">
+    
+
+    <div class="verybottom">
+      <div class="container">
+        <div class="row">
+          <div class="span6">
+            <p>&copy; KG - All right reserved</p>
+          </div>
+          <div class="span6">
+            <div class="pull-right">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+    
+    <!-- Optional JavaScript -->
+    <script>
+        function myFunction() {
+          // Declare variables 
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+        
+          // Loop through all table rows, and hide those who don't match the search query
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            } 
+          }
+        }
+        </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-1.8.2.min.js"></script>
+  <script src="assets/js/jquery.easing.1.3.js"></script>
+  <script src="assets/js/google-code-prettify/prettify.js"></script>
+  <script src="assets/js/modernizr.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/jquery.elastislide.js"></script>
+  <script src="assets/js/jquery.flexslider.js"></script>
+  <script src="assets/js/jquery.prettyPhoto.js"></script>
+  <script src="assets/js/application.js"></script>
+  <script src="assets/js/hover/jquery-hover-effect.js"></script>
+  <script src="assets/js/hover/setting.js"></script>
+  <script src="assets/js/camera/camera.min.js"></script>
+  <script src="assets/js/camera/setting.js"></script>
+  </body>
+</html>
